@@ -18,6 +18,20 @@ or
 python -m pip install pymysql
 ```
 
+## Initialize the database
+```
+CREATE DATABASE note_taking_app;
+USE note_taking_app;
+
+CREATE TABLE notes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    content TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+```
+
 ## Authors
 
 - [@sidharth_everett](https://github.com/Cyber-Zypher)
